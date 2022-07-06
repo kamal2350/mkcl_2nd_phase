@@ -1,0 +1,104 @@
+.updateBody{
+    background-color: aliceblue;
+    height: max-content;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.updatePassContainer{
+   background-color: white;
+   height: 60vh;
+   width: 70%;
+   margin-top: 4rem;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: 5px 5px 10px 5px gray;
+   display: flex;
+}
+.leftUpdatepass{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rightUpdatepass{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.rightUpdatepass>p:nth-child(1){
+    margin-top: 20px;
+    
+    margin-left: 60px;
+}
+.rightUpdatepass>form{
+    width: 60%; 
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.rightUpdatepass>form>input{
+    padding: 7px 10px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.rightUpdatepass>form>input:focus{
+   
+    border: 2px solid cyan;
+    border-radius: 5px;
+}
+
+@media (max-width:750px){
+    .updatePassContainer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .leftUpdatepass{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .rightUpdatepass{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .rightUpdatepass>form{
+        width: 90%;
+    }
+    .rightUpdatepass>p:nth-child(1){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:400px){
+    .updatePassContainer{
+        width: 90%;
+    }
+    .rightUpdatepass>{
+        width: 100%;
+
+    }
+    .rightUpdatepass>form{
+        width: 100%;
+    }
+    .rightUpdatepass>form>input{
+        width: 100%;
+    }
+}

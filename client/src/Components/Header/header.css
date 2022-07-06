@@ -2,10 +2,14 @@
     height: 15vh;
     width: 100vw;
     display: flex;
+    position:sticky;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255) ;
     box-shadow: 15px 0px 8px 0px gray;
+    z-index: 99;
 }
 .left{
     height: 15vh;
@@ -22,7 +26,7 @@
 .center{
     height: 15vh;
     /* background-color: aquamarine; */
-    flex: 5;
+    flex: 4;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -33,7 +37,25 @@
     height:15vh;
     /* background-color: azure; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex: 3;
+}
+
+@media(max-width:750px){ 
+    .container{
+        height: max-content;
+        padding-bottom:2rem ;
+    }
+    .center{
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .right{
+        flex-direction: column;
+    }
+    .btnHeader{
+        font-size: small;
+    }
 }

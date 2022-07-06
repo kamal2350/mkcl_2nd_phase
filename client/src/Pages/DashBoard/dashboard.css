@@ -1,0 +1,91 @@
+.dashBoard{
+    height: max-content;
+    width:90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+    /* background-color: aliceblue; */
+    padding-top: 1rem;
+    margin-bottom: 4%;
+}
+.details{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 200;
+
+    background-color: rgba(196, 196, 196, 0.329);
+
+}
+.details>p:nth-child(1){
+    margin-bottom: 30px;
+    color: gray;
+}
+.cards{
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+   
+    
+}
+
+.card{
+    width: 30%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 6px 0px gray;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 2s;
+   
+}
+.title{
+    font-size: 24px;
+    
+}
+.value{
+    
+    margin-bottom: auto;
+    margin-top: auto;
+    color: gray;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+
+}
+.card:hover{
+    background-color: rgb(236, 207, 207);
+    transform: scale(1.1);
+    transition-duration: 2s;
+    cursor: pointer;
+
+}
+
+.passBtn{
+    margin-bottom: auto;
+    display: none;
+   
+    
+}
+.password:hover>.passBtn{
+    display: inline-block;
+
+}
+@media(max-width:750px){
+    .title{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:450px){
+    .title{
+        font-size: 18px;
+    }
+    .card{
+        width: 70%;
+    }
+}
